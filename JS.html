@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>DATE AND TIME</h1>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    Show Date and Time
+</button>
+<p id="demo"></p>
+
+<hr>
+
+<p id="demo2"></p>
+<script>
+    document.getElementById("demo2").innerHTML = "Good Afternoon!";
+</script>
+
+<hr>
+
+<p>JavaScript can change HTML content!</p>
+<button type="button" onclick="myFunction()">Click me</button>
+<p id="demo3">Hypertext markup language.</p>
+
+<script>
+    function myFunction() {
+        document.getElementById("demo3").innerHTML = "HTML";
+    }
+</script>
+
+<hr>
+
+<p id="demo4" style="text-align: center;">
+    JavaScript can change the style of HTML elements.
+</p>
+
+<script>
+    document.getElementById("demo4").style.color = "yellow";
+    document.getElementById("demo4").style.backgroundColor = "black";
+    document.getElementById("demo4").style.fontSize = "30px";
+    document.getElementById("demo4").style.padding = "10px";
+    document.getElementById("demo4").style.border = "2px solid red";
+</script>
+
+<hr>
+
+<p>Here, JavaScript changes the src attribute of an image.</p>
+
+<script>
+    function light(sw) {
+        var pic;
+        if (sw == 0) {
+            pic = "bulb.off.gif";
+        } else {
+            pic = "bulb.on.gif";
+        }
+        document.getElementById("myImage").src = pic;
+    }
+</script>
+
+<img id="myImage" src="bulb.off.gif" width="100" height="180">
+
+<p>
+    <button type="button" onclick="light(1)">ON</button>
+    <button type="button" onclick="light(0)">OFF</button>
+</p>
+<hr>
+<p id="demo5">JavaScript</p>
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+ 
+
+</body>
+</html>
